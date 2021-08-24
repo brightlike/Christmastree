@@ -9,6 +9,30 @@ pip3 install xxx 安装包依赖
 apt-get install / yum install 安装包
 
 
+### 防火墙
+网络问题先检查防火墙
+linux
+sudo ufw status
+sudo ufw enable
+sudo ufw allow 443
+netstat -nap|grep 443
+
+
+centos
+firewall-cmd --permanent --add-port=80/tcp
+firewall-cmd --query-port=8080/tcp
+firewall-cmd --reload
+
+开放端口：
+添加  firewall-cmd --zone=public --add-port=25240/tcp --permanent    （--permanent永久生效，没有此参数重启后失效）
+重新载入 firewall-cmd --reload
+查看 firewall-cmd --zone=public --query-port=80/tcp
+删除 firewall-cmd --zone=public --remove-port=80/tcp --permanent
+
+查看所有规则
+firewall-cmd --list-all
+
+
 ## ssh
 
 ssh-keygen -t rsa -C "xxx@yyyy.com" 生成rsa公钥

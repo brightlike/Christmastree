@@ -5,7 +5,7 @@
 # File Name: setup.py
 # Author: bright
 # Mail: brightmail@vip.qq.com
-# Created Time:  2018-05-24 16:25:34
+# Created Time:  2023-08-24 16:25:34
 #############################################
 
 
@@ -13,7 +13,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="bright",
-    version="0.0.10",
+    version="0.0.12",
     keywords=["tool", "bright"],
     description="bright tool",
     long_description="bright tool etc",

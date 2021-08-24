@@ -13,7 +13,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="bright",
-    version="0.0.9",
+    version="0.0.10",
     keywords=["tool", "bright"],
     description="bright tool",
     long_description="bright tool etc",

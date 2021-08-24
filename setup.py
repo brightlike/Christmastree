@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#-*- coding:utf-8 -*-
+# -*- coding:utf-8 -*-
 
 #############################################
 # File Name: setup.py
@@ -12,19 +12,19 @@
 from setuptools import setup, find_packages
 
 setup(
-    name = "bright",
-    version = "0.0.2",
-    keywords = ("tool","bright"),
-    description = "bright tool",
-    long_description = "bright tool etc",
-    license = "MIT Licence",
+    name="bright",
+    version="0.0.5",
+    keywords=["tool", "bright"],
+    description="bright tool",
+    long_description="bright tool etc",
+    license="MIT Licence",
 
-    url = "https://github.com/brightlike/Christmastree/",
-    author = "bright",
-    author_email = "brightmail@vip.qq.com",
+    url="https://github.com/brightlike/Christmastree/",
+    author="bright",
+    author_email="brightmail@vip.qq.com",
 
-    packages = find_packages(),
-    include_package_data = True,
-    platforms = "any",
-    install_requires = ['chardet']
+    packages=find_packages(),
+    include_package_data=True,
+    platforms="any",
+    install_requires=['chardet', 'requests']
 )
